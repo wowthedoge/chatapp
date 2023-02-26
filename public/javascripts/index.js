@@ -1,5 +1,7 @@
 
-let socket = io();
+const socket = io({
+    transports: ['websocket'],
+  });
 let username;
 
 var clients = 0;
