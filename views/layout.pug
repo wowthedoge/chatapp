@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title= title
+    script(src="https://cdn.socket.io/4.5.4/socket.io.min.js")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="javascripts/index.js")
+  body(onload="init()")
+    block content

@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  #chat_interface
+  h2#intro
+  h3#locationText 
+  h3#clientNo 0 users connected
+  div#history.boxed
+  div#input.bottom.boxed
+    form(style="width: 100%", onsubmit="return false;")
+      p
+        label(for="name") chat:
+        input(type="text", id="chat_input", name="chat_input", style="width: 80%")
+        button#chat_send(onclick="sendChatText()") Send
+
