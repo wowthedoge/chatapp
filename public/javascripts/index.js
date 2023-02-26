@@ -34,11 +34,10 @@ function updateIntro(name) {
 function updateLocation(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
-    document.getElementById('locationText').innerText = 'Latitude: ' + latitude + ' Longitude: ' + longitude;
+    document.getElementById('locationText').innerText = 'Your Latitude: ' + latitude + ' Longitude: ' + longitude;
 }
 
 function updateClientNo(number) {
-    console.log('update client no ' + number)
     document.getElementById('clientNo').innerText = number + ' users connected';
 }
 
