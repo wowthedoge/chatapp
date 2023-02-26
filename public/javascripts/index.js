@@ -1,5 +1,5 @@
 
-const socket = io({
+const socket = io("https://chatapp-one-iota.vercel.app/",{
     transports: ['websocket'],
   });
 let username;
