@@ -89,8 +89,16 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-const io = require('socket.io')(server, {
-  pingTimeout: 60000,
+const Pusher = require("pusher");
+
+const pusher = new Pusher({
+  appId: "1560548",
+  key: "16489bfebf2112e5b975",
+  secret: "f312be0dc8f7f94142d6",
+  cluster: "eu",
+  useTLS: true
 });
-var socket_module = require('../controllers/socket-io')
-socket_module.init(io, app)
+
+
+
+
